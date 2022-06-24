@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "crypto": "^1.0.1",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.3.1",
+    "pug": "^3.0.2"
+  }
+}

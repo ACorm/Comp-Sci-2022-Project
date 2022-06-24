@@ -1,0 +1,77 @@
+.title{
+	font-weight: bold;
+	font-size:15pt;
+	max-width:300pt;
+}
+
+.table_head{
+	font-weight: bold;
+	font-size:12pt;
+}
+
+.del_button:hover{
+	background-color: #d3d3d3;
+}
+
+.del_button{
+	/*display: flex;
+	justify-content: flex-end;*/
+}
+
+.del_button{
+	cursor: pointer;
+	display: inline;
+	float: right; 
+}
+
+.body{
+	padding-left: 70px;
+	padding-top: 40px;
+}
+
+.del_student_button{
+	cursor: pointer;
+	display: inline;
+	float: right;
+}
+
+.del_student_button:hover{
+	background-color: #d3d3d3;
+}
+
+input:invalid{
+	border-color: red;
+}
+
+input:focus{
+	outline: none;
+	border-width: 2px;
+	padding:1px;
+}
+
+input{
+	border: 1px solid;
+	/*margin: 10px;*/
+	padding: 2px;
+	/*max-width: 400px;*/
+}
+
+h3,h6{
+	margin: 2px;
+}
+
+input:invalid + label{
+	visibility: visible;
+	border: 1px solid red;
+	padding: 2px;
+	width: 180px;
+	/*background: red;*/
+}
+
+input:valid + label{
+	visibility: hidden;
+}
+
+fieldset{
+	border: hidden;
+}

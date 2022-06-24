@@ -1,0 +1,52 @@
+<!doctype html>
+<template id='class_table'>
+	<dt class=title id='class_name'>
+		<span id='reset_button' class='reset_button' onclick=resetStudents()>↻</span>
+		<span id='del_button' class='del_button' onclick=delClass()>x</span>
+		<h3></h3>
+		<h6></h6>
+	</dt>
+	
+	<dd>
+		<table>
+			<thead>
+			<tr><th class=table_head>Student Id</th><th class='table_head'>Name</th><th class='table_head'>Email</th></tr>
+			</thead>
+			<tbody id='main_body'>
+			</tbody>
+		</table>
+		<div>
+			<input id='newStudent_input' placeholder='Student Id'></input>
+			<button id='student_button' onclick=addStudent()>Add Student</button>
+		</div>
+	</dd>
+</template>
+<template id='student_row'>
+	<tr>
+		<td><span id='del_student_button' class='del_student_button' onclick=delStudent()>x</span></td>
+	</tr>
+</template>
+
+<html>
+	<head>
+		<title>Class View</title>
+		<script src="view.js"></script>
+		<link rel='stylesheet' href="view.css"></link>
+	</head>
+	<body class=body>
+		<button id=signOut-button onclick=signOut()>Sign Out</button>
+		<h1>Classes</h1>
+		<dl id='subjects'>
+		</dl>
+		<fieldset>
+			<input id='classId' placeholder='Class Id'></input>
+			<label for='classId'>Class Id already in use</label>
+			<br></br>
+			<input id='className' placeholder='Class Name'></input>
+			<label for='className'>Class name already in use</label>
+			<br></br>
+			<button onclick=addClass()>Add Class</button>
+		</fieldset>
+		<script>loadClasses();</script>
+	</body>
+</html>

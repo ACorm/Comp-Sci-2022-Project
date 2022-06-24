@@ -1,0 +1,48 @@
+.heading{
+	writing-mode:vertical-rl;
+	text-orientation:mixed;
+	transform: rotate(180deg);
+	min-width:50px;
+	border:3px solid black;
+}
+
+.skills_heading{
+	border:3px solid black;
+}
+
+.cell{
+	text-align:center;
+	border:3px solid black;
+}
+
+.table{
+	border:3px solid black;
+	margin: auto;
+	margin-top:40px;
+}
+
+.term_input{
+	width:50px;
+	text-align:center;
+}
+
+.comments{
+	border: solid 1px gray;
+	padding: 6px;
+	overflow: none;
+}
+.comments[contenteditable][placeholder]:empty:before {
+	/*Code Sourced from stack overflow u/Fritz Lin in response to question 20726174*/
+	content: attr(placeholder);
+	position: absolute;
+	color: gray;
+	background-color: transparent;
+}
+
+.student_title{
+	text-align: center;
+}
+
+#signOut-button{
+	float: right;
+}

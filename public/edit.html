@@ -1,0 +1,48 @@
+<!doctype html>
+<template id='term_report'>
+	<tr>
+	<td class=cell></td>
+	<td class=cell></td>
+	<td class=cell></td>
+	<td class=cell></td>
+	<td class=cell></td>
+	<td class=cell></td>
+	<td class=cell></td>
+	<td class=cell></td>
+	</tr>
+</template>
+<html>
+	<head>
+		<title>Report card editor</title>
+		<script src="edit.js"></script>
+		<link rel='stylesheet' href='edit.css'></link>
+	</head>
+	<body>
+		<button id=signOut-button onclick=signOut()>Sign Out</button>
+		<h1 id=student_name class=student_title></h1>
+		<table class=table>
+			<thead>
+			<tr>
+				<th class=heading rowspan='2'>Reporting Period</th>
+				<th class=heading rowspan='2'>Percentage Mark</th>
+				<th	class=skills_heading colspan='6'>Learning Skills and Work Habits</th>
+			</tr>
+			<tr>
+				<th class=heading>Responsibility</th>
+				<th class=heading>Organization</th>
+				<th class=heading>Independant Work</th>
+				<th class=heading>Collaboration</th>
+				<th class=heading>Initiative</th>
+				<th class=heading>Self-Regulation</th>
+			</tr>
+			</thead>
+			<tbody id='body'>
+			</tbody>
+		</table>
+		<h2>Comment</h2>
+		<div id='comment' placeholder='Type comment here' contenteditable class=comments></div>
+		<br>
+		<button onclick=submitTerm()>Save</button>
+	</body>
+	<script>load_report();</script>
+</html>
